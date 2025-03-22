@@ -28,6 +28,9 @@ jobs:
       
     - name: Run tests with coverage
       run: npm test
+      env:
+        NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+        NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
       
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v5
