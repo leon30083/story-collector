@@ -1,21 +1,27 @@
-# 故事收集器 (Story Collector)
+# Story Collector
 
-这是一个用于收集和管理不同语言故事的工具，可以将故事保存到 Notion 数据库中。目前支持中文故事的收集。
+一个多语言故事收集系统，支持从不同地区收集故事并保存到 Notion 数据库。
 
-## 功能特点
+## 功能特性
 
-- 支持多语言故事收集
-- 自动生成故事 ID 和标题
-- 将故事保存到 Notion 数据库
-- 防止重复收集相同的故事
-- 完整的日志记录
-- 故事数据验证
+- 支持多语言故事收集：
+  - 中文故事（中国、台湾、香港）
+  - 英语故事（美国、英国、加拿大、澳大利亚）
+  - 日语故事（日本）
+  - 西班牙语故事（西班牙、墨西哥、阿根廷）
+  - 阿拉伯语故事（埃及、沙特阿拉伯、阿联酋）
+  - 印地语故事（印度）
+- 自动故事去重
+- Notion 数据库集成
+- 完整的错误处理
+- 详细的日志记录
+- 全面的测试覆盖
 
 ## 安装
 
 1. 克隆仓库：
 ```bash
-git clone https://github.com/yourusername/story-collector.git
+git clone https://github.com/leon30083/story-collector.git
 cd story-collector
 ```
 
@@ -26,69 +32,67 @@ npm install
 
 3. 配置环境变量：
 创建 `.env` 文件并添加以下配置：
-```
-NOTION_API_KEY=your_notion_api_key
-NOTION_DATABASE_ID=your_notion_database_id
-NODE_ENV=development
+```env
+NOTION_TOKEN=your_notion_token
+NOTION_DATABASE_ID=your_database_id
 ```
 
 ## 使用方法
 
-1. 启动应用：
+1. 运行测试：
 ```bash
-npm start
+npm test
 ```
 
-2. 开发模式（自动重启）：
+2. 收集故事：
 ```bash
-npm run dev
+node src/index.js
 ```
 
-## 故事数据格式
-
-```javascript
-{
-  type: '民间故事',
-  region: '华东',
-  age_group: '3-6岁',
-  educational_themes: ['勇气', '智慧'],
-  length: '中篇',
-  cultural_source: '浙江民间故事'
-}
-```
-
-## 目录结构
+## 项目结构
 
 ```
 StoryCollector/
 ├── src/
-│   ├── collector/
-│   │   ├── base.js
-│   │   └── chinese.js
-│   └── utils/
-│       └── logger.js
-├── logs/
-│   ├── error.log
-│   └── combined.log
-├── package.json
-└── README.md
+│   ├── collector/      # 各语言故事收集器
+│   ├── integration/    # 第三方集成（如 Notion）
+│   ├── utils/         # 工具函数
+│   └── index.js       # 主入口文件
+├── tests/             # 测试文件
+├── data/              # 数据文件
+├── config/            # 配置文件
+└── docs/              # 文档
 ```
 
-## 开发说明
+## 开发
 
-- 所有故事收集器都继承自 `BaseCollector` 类
-- 每种语言的故事收集器需要实现特定的方法
-- 使用 Winston 进行日志记录
-- 使用 Jest 进行测试
+1. 安装开发依赖：
+```bash
+npm install --save-dev
+```
 
-## 贡献指南
+2. 运行测试：
+```bash
+npm test
+```
 
-1. Fork 项目
-2. 创建特性分支
-3. 提交更改
-4. 推送到分支
-5. 创建 Pull Request
+3. 检查代码覆盖率：
+```bash
+npm run test:coverage
+```
+
+## 贡献
+
+欢迎提交 Issue 和 Pull Request！
 
 ## 许可证
 
-MIT 
+本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
+
+## 作者
+
+- leon30083
+
+## 更新日志
+
+详见 [CHANGELOG.md](CHANGELOG.md) 
