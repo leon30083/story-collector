@@ -1,0 +1,41 @@
+{
+  "stories": [
+    {
+      "title": "CN001 小兔子的胡萝卜",
+      "language_code": "CN",
+      "region": "北京",
+      "category": "traditional",
+      "type": "fairy_tale",
+      "filepath": "F:\\onedrive\\user\\document\\工作文件夹\\知知猫\\StoryCollector\\data\\stories\\traditional\\CN_北京\\fairy_tale\\CN001_CN001_小兔子的胡萝卜.md",
+      "collected_at": "2025-03-21T11:59:45.219492"
+    },
+    {
+      "title": "JP001 樱花小精灵",
+      "language_code": "JP",
+      "region": "Tokyo",
+      "category": "traditional",
+      "type": "fairy_tale",
+      "filepath": "F:\\onedrive\\user\\document\\工作文件夹\\知知猫\\StoryCollector\\data\\stories\\traditional\\JP_Tokyo\\fairy_tale\\JP001_JP001_樱花小精灵.md",
+      "collected_at": "2025-03-21T12:03:30.323324"
+    },
+    {
+      "title": "EN001 The Whispering Woods",
+      "language_code": "EN",
+      "region": "London",
+      "category": "traditional",
+      "type": "legend",
+      "filepath": "F:\\onedrive\\user\\document\\工作文件夹\\知知猫\\StoryCollector\\data\\stories\\traditional\\EN_London\\legend\\EN001_EN001_The_Whispering_Woods.md",
+      "collected_at": "2025-03-21T12:03:38.403633"
+    },
+    {
+      "title": "CN001 Shanghai的奇妙故事",
+      "language_code": "CN",
+      "region": "Shanghai",
+      "category": "traditional",
+      "type": "fairy_tale",
+      "filepath": "F:\\onedrive\\user\\document\\工作文件夹\\知知猫\\StoryCollector\\data\\stories\\traditional\\CN_Shanghai\\fairy_tale\\CN001_CN001_Shanghai的奇妙故事.md",
+      "collected_at": "2025-03-21T12:58:04.553411"
+    }
+  ],
+  "last_updated": "2025-03-21T12:58:04.553433"
+}
